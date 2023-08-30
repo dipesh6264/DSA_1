@@ -15,14 +15,12 @@ void nextPermutation(vector<int>& arr)
         }
     }
  
- 
     if (i < 0) {
         reverse(arr.begin(), arr.end());
     }
- 
+
     else {
  
-        
         for (j = n - 1; j > i; j--) {
             if (arr[j] > arr[i]) {
                 break;
